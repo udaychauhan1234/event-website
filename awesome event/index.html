@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+	<title>Awesome-events-pvt.Ltd.</title>
+  <link rel="icon" type="image/png" href="logo.jpg">
+</head>
+<body>
+
+	<!-- This is the header section -->
+	<header>
+  <img src="logo.jpg" alt="Awesome event logo" class="logo">
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  <nav id="navMenu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+	<!-- Slideshow Banner -->
+<div class="video-background" id="home">
+  <video autoplay muted loop playsinline src="video1.mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+	<!--about us-->
+	
+
+	<div class="aboutus" id="about">
+		<h1><i>About us</i></h1>
+		<p class="pr1">At Awesome Event Pvt Ltd, we don’t just plan events — we create experiences that resonate, inspire, and leave a lasting impression. With our roots in Delhi NCR, we proudly serve a diverse clientele across corporate, educational, and social sectors. Whether it’s a high-profile conference, a school’s annual function, or an elegant private celebration, we bring unmatched energy, style, and precision to every project.
+     Our identity is bold and regal, symbolized by the lion — representing strength, leadership, and excellence. With a touch of luxury in our signature black and gold theme, we aim to make every event a showstopper.
+    </p>
+	</div>
+
+<h1 class="event" id="events"><i>Events</i></h1>
+<div class="events-container">
+  <!-- Card 1 -->
+  <div class="card">
+    <img src="card1.jpg" alt="Event 1">
+    <div class="card-content">
+      <h2>Corporate Events & Launches</h2>
+      <button onclick="toggleText(this)">Read More</button>
+      <p class="hidden-text">We plan and execute corporate events, product launches, and business summits with high professionalism and creativity.</p>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <img src="card3.jpg" alt="Event 2">
+    <div class="card-content">
+      <h2>Social Events</h2>
+      <button onclick="toggleText(this)">Read More</button>
+      <p class="hidden-text">From birthdays to reunions, we organize social gatherings that bring people together in unforgettable ways.</p>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <img src="card2.jpg" alt="Event 3">
+    <div class="card-content">
+      <h2>Entertainment Events</h2>
+      <button onclick="toggleText(this)">Read More</button>
+      <p class="hidden-text">We manage concerts, comedy shows, and celebrity nights packed with entertainment and excitement.</p>
+    </div>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="card">
+    <img src="card4.jpg" alt="Event 4">
+    <div class="card-content">
+      <h2>Promotional & Marketing Events</h2>
+      <button onclick="toggleText(this)">Read More</button>
+      <p class="hidden-text">Boost your brand with promotional activities, roadshows, and sampling events tailored to your audience.</p>
+    </div>
+  </div>
+
+  <!-- Card 5 -->
+  <div class="card">
+    <img src="card5.jpg" alt="Event 5">
+    <div class="card-content">
+      <h2>Exhibitions & Brand Activations</h2>
+      <button onclick="toggleText(this)">Read More</button>
+      <p class="hidden-text">We handle exhibitions and brand activations to give your products the spotlight they deserve.</p>
+    </div>
+  </div>
+
+  <!-- Card 6 -->
+  <div class="card">
+    <img src="card6.jpg" alt="Event 6">
+    <div class="card-content">
+      <h2>Theme-based Parties & Custom Concepts</h2>
+      <button onclick="toggleText(this)">Read More</button>
+      <p class="hidden-text">From Halloween to retro nights, we bring your imagination to life with custom party themes.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleText(button) {
+  const paragraph = button.nextElementSibling;
+  if (paragraph.style.display === "block") {
+    paragraph.style.display = "none";
+    button.textContent = "Read More";
+  } else {
+    paragraph.style.display = "block";
+    button.textContent = "Read Less";
+  }
+}
+</script>
+
+ <div class="container" id="about">
+        <h2>Reach</h2>
+        <p>We make your imagination into reality.</p>
+        
+        <div class="stats">
+            <div>
+                <span class="stat-item counter">100+</span>
+                <div class="stat-desc">Destination weddings</div>
+            </div>
+            <div>
+                <span class="stat-item counter">150+</span>+
+                <div class="stat-desc">happy couples</div>
+            </div>
+            <div>
+                <span class="stat-item counter">6yr+</span>+
+                <div class="stat-desc">Established since</div>
+            </div>
+            <div>
+                <span class="stat-item counter">7+</span>+
+                <div class="stat-desc">Cities</div>
+            </div>
+            <div>
+                <span class="stat-item counter">1000+</span>+
+                <div class="stat-desc">happy people</div>
+            </div>
+            <div>
+                <span class="stat-item counter">50+</span>+
+                <div class="stat-desc">Exibitions</div>
+            </div>
+            <div>
+                <span class="stat-item counter">60+</span>+
+                <div class="stat-desc">Religious Events</div>
+            </div>
+        </div>
+        
+        <button class="btn-explore">Explore</button>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+  <section class="slider-section" id="gallery">
+  <div class="slider">
+    <div class="slide-track">
+      <img src="image1.jpg" class="gallery-img" alt="Image 1">
+      <img src="image2.jpg" class="gallery-img" alt="Image 2">
+      <img src="image3.jpg" class="gallery-img" alt="Image 3">
+      <img src="image4.jpg" class="gallery-img" alt="Image 4">
+      <img src="image5.jpg" class="gallery-img" alt="Image 5">
+
+      <!-- Duplicate for infinite loop effect -->
+      <img src="image1.jpg" class="gallery-img" alt="Image 1">
+      <img src="image2.jpg" class="gallery-img" alt="Image 2">
+      <img src="image3.jpg" class="gallery-img" alt="Image 3">
+      <img src="image4.jpg" class="gallery-img" alt="Image 4">
+      <img src="image5.jpg" class="gallery-img" alt="Image 5">
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer" id="contact">
+    <div class="footer-container">
+        <!-- Footer Logo -->
+        <div class="footer-logo">
+            <img src="logo.jpg" alt="Tech Intel Logo" height="60" width="60">
+            <h3>Awesome Events</h3>
+            <p>We Wake Memorable Movements.</p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-links">
+          <h4>Contact Us</h4>
+              <ul>
+                <li>
+                 <i class="fas fa-phone-alt"></i> 
+                 <a href="tel:+918447716668">8447716668</a>|
+                 <a href="tel:+919810065200">9810065200</a>
+               </li>
+               <li>
+                 <i class="fas fa-envelope"></i> 
+                 <a href="mailto:Awesomeeventpvtltd@gmail.com">Awesomeeventpvtltd@gmail.com</a>
+               </li>
+               <li>
+                 <i class="fas fa-map-marker-alt"></i> 
+                 <a href="https://www.google.com/maps/place/house+no.121b+block+G+ratiya+marg+sangam+vihar,+Delhi,+India+110080" target="_blank">House No. 121B, Block G, Ratiya Marg, Sangam Vihar, Delhi, India 110080</a>
+               </li>
+             </ul>
+        </div>
+       <!-- Social Media -->
+       <div class="footer-social">
+          <h4>Follow Us</h4>
+          <a href="https://www.facebook.com/profile.php?id=61559062886372" class="social-icon" target="_blank">
+             <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/meettarafdar2022/" class="social-icon" target="_blank">
+             <i class="fab fa-instagram"></i>
+          </a>
+       </div>
+
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Awesome Event Pvt Ltd. All Rights Reserved.</p>
+    </div>
+</footer>
+
+	<script>
+		function toggleMenu() {
+			document.getElementById('navMenu').classList.toggle('show');
+		}
+	</script>
+  <script>
+  // Function to handle smooth scrolling to sections
+  document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1); // Get target section ID
+      document.getElementById(targetId).scrollIntoView({
+        behavior: 'smooth',  // Smooth scroll
+        block: 'start'       // Align to top of the section
+      });
+    });
+  });
+
+  // Function to toggle visibility of the paragraph on 'Read More' click
+  function toggleText(button) {
+    const pTag = button.nextElementSibling; // Get the <p> tag
+    pTag.style.display = pTag.style.display === 'block' ? 'none' : 'block';
+  }
+
+  function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('show');
+  }
+</script>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navMenu');
+    nav.classList.toggle('show');
+  }
+</script>
+
+</body>
+</html>
